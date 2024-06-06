@@ -1,14 +1,9 @@
 // eslint-disable-next-line no-undef
 const config = require('../config');
 
-const requestBody = {
-    
-		"ids": [
-			1,
-			4,
-			44
-		]
-		
+const requestBody = 
+{
+ 	"ids": [ 1,	4, 44]
 }
 
 test('Response body for goods in warehouses:', async () => {
