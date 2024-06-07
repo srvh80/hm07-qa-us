@@ -66,3 +66,9 @@ Parse the response body contains the expected data for /api/v1/kits/4
 Test 2:
 Check the response status code for /api/v1/kits/400
 Parse the response body contains the expected data for /api/v1/kits/400
+****************************************************************************************************************
+
+git status
+git commit --all
+git push
+****************************************************************************************************************
