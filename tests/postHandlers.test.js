@@ -24,8 +24,10 @@ test('Response body for goods in warehouses:', async () => {
 	} catch (error) {
 		console.error(error);
 	}
-	console.log("Response body for POST to Check the quantity of goods in warehouses:",actualResponseBody);
 	expect(actualStatusCode).toBe(200);
+	expect(actualResponseBody).toBeTruthy();
+	
+	console.log("Response body for POST to Check the quantity of goods in warehouses:",actualResponseBody);
 	console.log("Response Status code for POST:",actualStatusCode);
 
 });
@@ -68,6 +70,10 @@ test('Response body for courier check:', async () => {
 	} catch (error) {
 		console.error(error);
 	}
+	
+	expect(actualStatusCode).toBe(200);
+	expect(actualResponseBody).toBeTruthy();
+
 	console.log("Response body for courier check:", actualResponseBody);
 	console.log("Response Status code for POST:",actualStatusCode);
 });

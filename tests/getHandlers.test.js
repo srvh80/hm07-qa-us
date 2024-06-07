@@ -45,7 +45,9 @@ test('Expected to return 200 status code....', async () => {
 		console.error(error);
 	}
 	expect(actualStatusCode).toBe(200);
-	
+	expect(actualResponseBody[0].name).toContain("Order and Go");
+	expect(actualResponseBody[1].name).toContain("Speedy");
+
 	console.log("Actual return Status for GET Courier services:", actualStatusCode);
 	console.log("Actual Response Body for GET Courier services:", actualResponseBody);
 	
@@ -63,6 +65,9 @@ test('Expected to return 200 status code....', async () => {
 		console.error(error);
 	}
 	expect(actualStatusCode).toBe(200);
+	expect(actualResponseBody[0].name).toBe("Everything You Need");
+	expect(actualResponseBody[3].name).toBe("Big World");
+
 	console.log("Actual return Status for GET list of warehouses:", actualStatusCode);
 	console.log("Actual Response Body for GET list of warehouse:", actualResponseBody);
 	
